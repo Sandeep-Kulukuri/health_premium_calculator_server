@@ -3,7 +3,7 @@ from pymongo import MongoClient
 from flask_cors import CORS
 
 app = Flask('health_care')
-conn_str = 'mongodb+srv://sandeep_mongo_atlas_free_tier_user:sandeep_mongo_atlas_free_tier_pass@cluster0.sco2ge4.mongodb.net/?retryWrites=true&w=majority'
+conn_str = 'mongodb+srv://<username>:<password>@<cluster>'
 client = MongoClient(conn_str)
 
 rate_card_collection = client['health_care_plan']['rate_card']
