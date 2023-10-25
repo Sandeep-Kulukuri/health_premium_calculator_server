@@ -60,7 +60,7 @@ def get_expected_premium():
 
 
 # Configure CORS to allow requests from your React application's origin
-cors = CORS(app, resources={r"/calculate_premium": {"origins": "http://localhost:5173"}})
+cors = CORS(app, resources={r"/calculate_premium": {"origins": "*"}})
 
 
 if __name__ == '__main__':
